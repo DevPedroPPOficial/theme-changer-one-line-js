@@ -1,0 +1,49 @@
+:root {
+    --bg-color: #282A36;
+    --text-color: #F8F8F2;
+    --bg-color-button: #6EFFBF;
+    --text-color-button: #282A36;
+}
+
+.light:root {
+    --bg-color: #F8F8F2;
+    --text-color: #282A36;
+    --bg-color-button: #6EFFBF;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__field > label {
+    font-size: 0.8rem;
+}
+
+button {
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--text-color-button);
+    background-color: var(--bg-color-button);
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
